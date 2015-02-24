@@ -1,0 +1,49 @@
+/* Temporary working Space for the changes for Program 2*/
+
+// In order to open the file and make sure that there are no errors before trying to fget the information and scan it
+if (pszInventoryFileName == NULL)
+    exitError(ERR_MISSING_SWITCH, "-i"); // program gives error because the user didn't pass the -i flag
+
+pfileInventory = fopen(pszInventoryFileName, "r");
+if (pfileInventory == NULL)
+    exitError(ERR_INVENTORY_FILENAME, pszInventoryFileName);
+
+
+
+
+/**********************   getInventoryData **************************************
+ Stock getInventoryData(Stock stockList[m], FILE pfile)
+ Purpose:
+     This function will read the inventory file that is passed into the program and assign the data into an array of Stock.
+ Parameters:
+    FILE    *pfileInventory // Passed into the program with the -i flag when calling the program
+    Stock stockList[m]; // The stock array that we are going to edit and return back to the main program. 
+
+ Notes:
+    In this function we will declare the array of 8 Inventory Items that the company keeps in stock, we will 
+    then assign the values of the structures using the information that we get from the input file. 
+ Return Values:
+ ******************************************************************************/
+ int i = 0; // which spot in the array we are in
+ char szInputBuffer[100]; // holds the current line of the input file
+
+ for (i = 0; i < stockList[i]) != 999; i++)
+ {
+    //input the information from the curent szInputBuffer to the attributes of the array
+
+ }
+
+
+/**********************   printInventoryData **************************************
+ void printInventoryData(Stock stockList[m])
+ Purpose:
+     This function will read the current information in the array of Stocks and print them to the user. The values
+     in the array should reflect the orders that have been processed. 
+ Parameters:
+    Stock stockList[8]; // This is the array that we are using to hold the inventory data in our program. 
+    
+ Notes:
+    Read the information that is in the array of Stock items and print it out to the user. The output should reflect any changes made to the array.  
+ Return Values:
+    Output in the console
+ ******************************************************************************/
